@@ -58,10 +58,8 @@ Get, Post, Put, Delete를 상황에 맞게 사용하였다. 자원인 Post를 �
 ```
 4. 적절한 관심사 분리를 적용하였나요? (Controller, Repository, Service)
 ```
-  controller에서는 입력을 받고 결과를 응답하는 용도로만 사용하였고  
-  service에서 요구사항에 맞게 동작하여 controller 결과를 전달하였다.  
-  repository는 DB 자원관리 역할만을 수행하였다.  
-  또한 Post와 통일된 형식을 위해 만든 Repsonse 두 가지에서 또 각각의 컨트롤러와 서비스, 리포지토리를 만들어주었다.  
+  controller에서는 입력을 받고 결과를 응답하는 용도로만 사용하였고 service에서 요구사항에 맞게 동작하여 controller 결과를 전달하였다.  
+  repository는 DB 자원관리 역할만을 수행하였다. 또한 Post와 통일된 형식을 위해 만든 Repsonse 두 가지에서 또 각각의 컨트롤러와 서비스, 리포지토리를 만들어주었다.  
     
     
 ```
