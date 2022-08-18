@@ -21,8 +21,8 @@ Dto
 
 Repository
 - PostRepository: DB에서 Post를 관리하는 repository. post 리스트를 최신순으로 정렬하여 반환하는 역할도 있음
-```
-
+```  
+  
 ```
 통일된 형식을 위한 클래스
 
@@ -34,9 +34,9 @@ Repository
 -Exception: ID가 없는 오류 발생시 에러메시지를 설정하는 enum
 
 -ErrorDto: 설정해둔 에러메시지인 code와 message를 담고있는 dto
+```  
   
-  
-```
+    
 ##  Q&A
 ```
 1. 수정, 삭제 API의 request를 어떤 방식으로 사용하셨나요? (param, query, body)
@@ -72,9 +72,9 @@ Controller 2개, Service 2개, Repository 1개 총 5개이다.
 ```
 6. API 명세서 작성 가이드라인을 검색하여 직접 작성한 명세서와 비교해보세요!
 ```
-나와 같이 기능에 대한 설명이 있는 명세서도 있고 없는 명세서도 있었고,  
-Request와 Response를 나처럼 입력과 출력 그대로 적는 명세서도 있었고 타입만 적는 명세서도 있었다.
-디테일이 사람마다 조금씩 차이가 있는 것 같다.
+  나와 같이 기능에 대한 설명이 있는 명세서도 있고 없는 명세서도 있었고,  
+  Request와 Response를 나처럼 입력과 출력 그대로 적는 명세서도 있었고 타입만 적는 명세서도 있었다.
+  디테일이 사람마다 조금씩 차이가 있는 것 같다.  
   
   
 
