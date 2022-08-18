@@ -58,30 +58,31 @@ Get, Post, Put, Delete를 상황에 맞게 사용하였다. 자원인 Post를 �
 ```
 4. 적절한 관심사 분리를 적용하였나요? (Controller, Repository, Service)
 ```
-controller에서는 입력을 받고 결과를 응답하는 용도로만 사용하였고
-service에서 요구사항에 맞게 동작하여 controller 결과를 전달하였다.
-repository는 DB 자원관리 역할만을 수행하였다.
-또한 Post와 통일된 형식을 위해 만든 Repsonse 두 가지에서 또 각각의 컨트롤러와 서비스, 리포지토리를 만들어주었다.
-  
-
+  controller에서는 입력을 받고 결과를 응답하는 용도로만 사용하였고  
+  service에서 요구사항에 맞게 동작하여 controller 결과를 전달하였다.  
+  repository는 DB 자원관리 역할만을 수행하였다.  
+  또한 Post와 통일된 형식을 위해 만든 Repsonse 두 가지에서 또 각각의 컨트롤러와 서비스, 리포지토리를 만들어주었다.  
+    
+    
 ```
 5. 작성한 코드에서 빈(Bean)을 모두 찾아보세요!
 ```
-Controller 2개, Service 2개, Repository 1개 총 5개이다.
+  Controller 2개, Service 2개, Repository 1개 총 5개이다.  
+  
   
 ```
 6. API 명세서 작성 가이드라인을 검색하여 직접 작성한 명세서와 비교해보세요!
 ```
   나와 같이 기능에 대한 설명이 있는 명세서도 있고 없는 명세서도 있었고,  
-  Request와 Response를 나처럼 입력과 출력 그대로 적는 명세서도 있었고 타입만 적는 명세서도 있었다.
+  Request와 Response를 나처럼 입력과 출력 그대로 적는 명세서도 있었고 타입만 적는 명세서도 있었다.  
   디테일이 사람마다 조금씩 차이가 있는 것 같다.  
-  
-  
-
+    
+    
+    
 ## 배포 ip
-13.209.88.187
-
-  
-  
+  13.209.88.187  
+    
+      
+    
 ## 유스케이스 및 API 명세서
 https://yonykk.tistory.com/20
