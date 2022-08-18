@@ -41,14 +41,13 @@ Repository
 ```
 1. 수정, 삭제 API의 request를 어떤 방식으로 사용하셨나요? (param, query, body)
 ```
-id는 @PathVariable 어노테이션을 사용하여 param 방식으로 id를 가져온 뒤
-query문을 이용하여 DB에 일치하는 POST 객체를 찾아낸다.
+id는 @PathVariable 어노테이션을 사용하여 param 방식으로 id를 가져온 뒤 DB에 일치하는 POST 객체를 찾아낸다.
 여기서 삭제는 바로 그 객체를 삭제만 하면 되고 수정은 body에 담아온 내용으로 update한다.
   
 ```
 2. 어떤 상황에 어떤 방식의 request를 써야하나요?
 ```
-JSON과 같은 데이터를 요청할 때에는 body를 사용하고 url값에서 숫자나 짧막한 값을 가져올 때에는 param을 사용한다. param은 이번 과제의 지정한 게시물의 조회, 수정, 삭제 등과 같이 url로 특정 객체를 지정할 때 주로 사용된다. query란 특정 조건으로 조회하고 싶을 때 규칙에 맞게 문자열을 작성하면 그대로 반환해주는 것이다. 특정 객체를 DB에서 찾거나, 규칙에 맞춰 리스트를 반환할 때 사용된다.
+JSON과 같은 데이터를 요청할 때에는 body를 사용하고 url값에서 숫자나 짧막한 값을 가져올 때에는 param을 사용한다. param은 이번 과제의 지정한 게시물의 조회, 수정, 삭제 등과 같이 url로 특정 객체를 지정할 때 주로 사용된다. query는 url뒤에 붙여서 여러개의 파라미터를 전달할 수 있다.
   
 ```
 3. RESTful한 API를 설계했나요? 어떤 부분이 그런가요? 어떤 부분이 그렇지 않나요?
@@ -64,7 +63,7 @@ controller에서는 입력을 받고 결과를 응답하는 용도로만 사용�
 ```
 5. 작성한 코드에서 빈(Bean)을 모두 찾아보세요!
 ```
-  Controller 2개, Service 2개, Repository 1개 총 5개이다.  
+  Controller 2개, Service 2개, Repository 1개가 있다. 
   
   
 ```
