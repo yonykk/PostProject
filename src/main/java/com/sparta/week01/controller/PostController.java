@@ -27,9 +27,10 @@ public class PostController {
 
     // Post 작성 메서드. requestDto를 통해 전달된 정보를 받아와 Post를 생성하고 DB에 저장한다.
     @PostMapping("/api/post")
-    public Post createPostList(@RequestBody PostRequestDto requestDto) {
+    public CommonResponse<ResponseDto> createPostList(@RequestBody PostRequestDto requestDto) {
         Post post = new Post(requestDto);
-        return postRepository.save(post);
+        postRepository.save(post);
+        return new CommonResponse<>(new ResponseDto(post));
     }
 
     //Post 수정 메서드. DB에서 같은 값의 id를 찾아내어 전달받은 dto의 값으로 바꿔치기한다. 수정된 post 반환
