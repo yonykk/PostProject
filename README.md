@@ -63,7 +63,7 @@ controller에서는 입력을 받고 결과를 응답하는 용도로만 사용�
 ```
 5. 작성한 코드에서 빈(Bean)을 모두 찾아보세요!
 ```
-  Controller 2개, Service 2개, Repository 1개가 있다. 
+  Controller, Service, Repository가 있다. (Post, Response 각각)
   
   
 ```
